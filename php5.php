@@ -1,49 +1,21 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../style/style.css">
-    <title>Usuwanie parzystych elementów z tablicy</title>
-</head>
-<body>
-  <fieldset>
-        <?php
-            echo "Tablica przed <br><br>";
-            $roj = array();
+<?php
 
-            for ($i = 0; $i < 30; $i++) {
-                $roj[$i] = rand(50, 100);
-            }
+$tablica = array();
 
-            foreach ($roj as $a) {
-                echo $a . ", ";
-            }
+for ($i = 0; $i < 50; $i++) {
+    $tablica[$i] = rand(1, 100);
+}
 
-            echo "<br><br>";
-            echo "Tablica po <br><br>";
 
-            $roj2_p = array();
-            $roj2_n = array();
+foreach ($tablica as $value) {
+    echo "$value"." ";
+}
+echo "<br>";
+echo "\n";
 
-            foreach ($roj as $a) {
-                if ($a % 2 == 1) {
-                    $roj2_n[] = $a;
-                } else {
-                    $roj2_p[] = $a;
-                }
-            }
-
-            foreach ($roj2_n as $n) {
-                echo $n . ", ";
-            }
-
-            echo "<br><br>";
-            echo "Tablica z parzystymi elementami:<br><br>";
-
-            foreach ($roj2_p as $p) {
-                echo $p . ", ";
-            }
-        ?>
-    </fieldset>
-</body>
-</html>
+foreach ($tablica as $index => $wartosc) {
+    if (sqrt($index + 1) == (int)sqrt($index + 1)) {
+        echo "$wartosc ";
+    }
+}
+?>
