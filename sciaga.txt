@@ -1,0 +1,32 @@
+Tablica:
+
+ArrayList<Klasa?> nazwa tablicy = new ArrayList<>();
+
+dodawanie do tablicy
+
+nazwaTablicy.add(co chce dodać)
+
+Pamiętać o Override (to string)
+
+Tworzenie Funkcji:
+
+public void nazwafunkcji (typ zmienna){
+	kod funkcji
+}
+
+Konstruktory
+Settery
+Gettery
+
+przykładowa pętla
+for (int  i = 0; i< pracownikLista.size(); i++){
+            kwota = kwota + pracownikLista.get(i).getWyplata();
+        }
+return kwota;
+
+nie wiem co ale pewnie się przyda
+Firma firma = new Firma();
+        Pracownik pracownikmax = new Pracownik("Max", "Dasdnj", "Mleczarz", 123123);
+
+używanie funkcji na obiekcie
+firma.dodajPracownika(pracownikKasia);
